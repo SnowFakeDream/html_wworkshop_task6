@@ -1,0 +1,76 @@
+    <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>   
+    $(document).ready(function(){  
+        $(".sA").click(function(){  
+            $("div").animate({  
+                left: '250px',  
+                opacity: '0.5',  
+                height: '150px',  
+                width: '150px'  
+            });  
+        });  
+    });  
+
+    $(document).ready(function(){ 
+        $("div").hover(function(){
+            $("div").animate({  
+                borderRadius: '100%'
+        })
+    })
+})
+
+$(document).ready(function(){ 
+        $(".hu").click(function(){
+            $("ul").slideUp();
+        })
+    })
+
+
+$(document).ready(function(){ 
+        $(".cuc").click(function(){
+            $("ul").css( {"background":"red"});
+})
+})
+    </script>   
+
+    <style>
+        div{
+            background: red;
+            height:200px;
+            width:200px
+        }
+
+        ul{
+            background: green;
+        }
+
+        p{
+
+        }
+
+        .sA{
+
+        }
+        .hu{
+
+        }
+        .cuc{
+            
+        }
+    </style>
+    </style>
+    </head>  
+    <body>  
+    <button class="sA">Start Animation</button>  
+    <button class="hu">hide ul</button>  
+    <button class="cuc">change ul color</button>  
+    <div style="background:#125f21;height:100px;width:100px;position:absolute;"></div> 
+    <div></div> 
+    <ul>
+        <li><a>Masser and Secunda</a></li>
+    </ul>
+    </body>  
+    </html>  
